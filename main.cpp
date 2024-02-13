@@ -46,12 +46,12 @@ public:
             std::copy(std::istream_iterator<std::string>(ss), std::istream_iterator<std::string>(), std::back_inserter(words));
             std::sort(words.begin(), words.end(), [](const std::string& str1, const std::string& str2) {
                 std::string lowerStr1;
-                std::transform(str1.begin(), str1.end(), std::back_inserter(lowerStr1), [](u_char c) {
+                std::transform(str1.begin(), str1.end(), std::back_inserter(lowerStr1), [](unsigned char c) {
                     return std::tolower(c);
                 });
 
                 std::string lowerStr2;
-                std::transform(str2.begin(), str2.end(), std::back_inserter(lowerStr2), [](u_char c) {
+                std::transform(str2.begin(), str2.end(), std::back_inserter(lowerStr2), [](unsigned char c) {
                     return std::tolower(c);
                 });
 
