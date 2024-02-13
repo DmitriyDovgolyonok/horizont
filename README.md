@@ -24,3 +24,4 @@ cmake ..
 cmake --build . --config Release
 cd Release
 ```
+PS: Use the Latin alphabet in files ;)
